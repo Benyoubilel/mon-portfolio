@@ -91,7 +91,7 @@ $( document ).ready(function() {
 /* ---------------------------------------------- */
         
 new TypeIt('#jesuis', {
-  strings: ["Je Bilel BEn Youssef", "Designer & DÉVELOPPEUR WEB"],
+  strings: ["Je suis Bilel BEn Youssef", "Designer & DÉVELOPPEUR WEB"],
   speed: 50,
   loop:true,
   loopDelay:10000,
