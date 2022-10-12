@@ -106,20 +106,20 @@ new TypeIt('#jesuis', {
         )
     });
     
-  function sendEmail(){
+//   function sendEmail(){
 
-	var params= {
-		from_name : document.getElementById("fullname").value,
-		email_id : document.getElementById("email_id").value,
-		sujet: document.getElementById("sujet").value,
-		message : document.getElementById("message")
-	}
-	emailjs.send('service_nqmlwsm','template_ext6s8u',params).then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    },function(error) {
-       console.log('FAILED...', error);
-    })
-  }
+// 	var params= {
+// 		from_name : document.getElementById("fullname").value,
+// 		email_id : document.getElementById("email_id").value,
+// 		sujet: document.getElementById("sujet").value,
+// 		message : document.getElementById("message")
+// 	}
+// 	emailjs.send('service_nqmlwsm','template_ext6s8u',params).then(function(response) {
+//        console.log('SUCCESS!', response.status, response.text);
+//     },function(error) {
+//        console.log('FAILED...', error);
+//     })
+//   }
 
         // listen to the form submission
       
