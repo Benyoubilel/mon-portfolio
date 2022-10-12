@@ -5,11 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="application/x-font-woff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bilel Ben Youssef étudiant et développeur web | Java | Mobile à Paris. Création de sites internet ergonomiques. Développement d'application. Voici mon portfolio où vous retrouverez tous mes projets, ainsi qu'un formulaire pour me contacter">
+    <meta name="description"
+        content="Bilel Ben Youssef étudiant et développeur web | Java | Mobile à Paris. Création de sites internet ergonomiques. Développement d'application. Voici mon portfolio où vous retrouverez tous mes projets, ainsi qu'un formulaire pour me contacter">
     <meta name="author" content="bilel ben youssef">
     <meta name="google-site-verification" content="xrESO8fpu4QhsrLd6fdyNamdnWO_3Yw1DZW_xxLcC2A" />
     <meta name="author" content="Bilel Ben Youssef">
-    <meta name="Keywords" content="portfolio, bilel, Referencement web, Bilel Ben Youssef, Developpeur web, Développeur Java, Mobile, Android, Informatique">
+    <meta name="Keywords"
+        content="portfolio, bilel, Referencement web, Bilel Ben Youssef, Developpeur web, Développeur Java, Mobile, Android, Informatique">
     <meta name="Robots" content="all">
     <meta property="og:title"
         content="Bilel Ben Youssef étudiant et développeur web | Java | Mobile à Tunis. Création de sites internet responsive.">
@@ -1114,10 +1116,10 @@
                                     placeholder="Votre message" required></textarea>
                             </div>
 
-                            <button class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s" >Me contacter
+                            <button class="btn btn-block btn-custom-2 wow fadeInUp" data-wow-delay=".3s">Me contacter
                             </button>
                         </div>
-                        <div class="ajax-response"></div>
+                        <div class="ajax-response" id="ajax-response"></div>
                     </form>
 
                 </div>
@@ -1231,29 +1233,35 @@
         })();
     </script>
     <script>
-        	var response = $('#contact-form .ajax-response');
+       
         // listen to the form submission
-        document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-            event.preventDefault();
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
 
-            const serviceID = "service_nqmlwsm";
-            const templateID = "template_ext6s8u";
+                const serviceID = "service_nqmlwsm";
+                const templateID = "template_ext6s8u";
 
-            // send the email here
-        // if(document.getElementById('from_name')!="")
-            emailjs.sendForm(serviceID, templateID, this).then(
-            (response) => {
-                response.html('<i class="fa fa-success"></i> Message envoyé.');
-                //alert("SUCCESS!");
-            },
-            (error) => {
-                response.html('<i class="fa fa-warning"></i> Corriger les erreurs et réessayer.');
-                //alert("FAILED...", error);
-            }
-            );
-        });
+                // send the email here
+                // if(document.getElementById('from_name')!="")
+                emailjs.sendForm(serviceID, templateID, this).then(
+                    (response) => {
+                        console.log("SUCCESS!", response.status, response.text);
+                        alert("message envoyer");
+                        
+                        document.getElementById("email_id").value='';
+                        document.getElementById("fullname").value='';
+                        document.getElementById("sujet").value='';
+                        document.getElementById("message").value='';
+            
+                       
+                        // document.getElementsByClassName("ajax-response").innerHTML='<i class="fa fa-success"></i> message envoyé.';
+                    },
+                    (error) => {
+                        console.log("FAILED...", error);
+                        alert("FAILED...", error);
+                    }
+                );
+            });
     </script>
 </body>
 
