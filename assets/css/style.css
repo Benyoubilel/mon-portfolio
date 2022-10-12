@@ -1047,9 +1047,6 @@ figure {
 	box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
 }
 
-.iconbox-text {
-	/*padding-top: 15px;*/
-}
 
 .iconbox-title {
 	margin: 0 0 15px;
@@ -1639,9 +1636,7 @@ figure {
 	padding: 20px !important;
 }
 
-.recent-posts {
-	
-}
+
 
 /* ---------------------------------------------- /*
 *  14. All Media Queries
