@@ -1483,6 +1483,24 @@
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
             referrerpolicy="no-referrer-when-downgrade"></noscript>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>
+                window.oncontextmenu=function(){return false;}
+window.document.onkeydown=function(e){if(e.keyCode==123){return false;}else if((e.ctrlKey&&e.shiftKey&&e.keyCode=='I'.charCodeAt(0))||(e.ctrlKey&&e.shiftKey&&e.keyCode=='J'.charCodeAt(0))||(e.ctrlKey&&e.shiftKey&&e.keyCode=='C'.charCodeAt(0))||(e.ctrlKey&&e.keyCode=='U'.charCodeAt(0))){return false;}}
+                document.addEventListener('contextmenu', event => event.preventDefault());
+          document.onkeydown = function(e) {
+        if (e.ctrlKey  && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+        alert("dfghj");
+            return false;
+        } else {
+            return true;
+        }
+};
+            </script>
 </body>
 
 </html>
