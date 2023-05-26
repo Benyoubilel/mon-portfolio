@@ -8,8 +8,6 @@
 * 
 ------------------*/
 
-
-
 /*-----------------
   [ALL CONTENTS]
 
@@ -30,12 +28,9 @@
 
 ------------------*/
 
-
-
 /* ---------------------------------------------- /*
 *   1. General styles
 /* ---------------------------------------------- */
-
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900);
 
@@ -493,13 +488,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	margin-bottom: 40px;
 }
 
-
 /* ---------------------------------------------- /*
 *   2. Home
 /* ---------------------------------------------- */
 
 #home {
-	background: url("../images/home2.jpg");
 	background-color: #5b5963;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -646,7 +639,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	100% { top:25px; opacity: 0;}
 }
 
-
 /* Slider */
 
 .slider {
@@ -717,7 +709,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 *   3. Navigation
 /* ---------------------------------------------- */
 
-
 .is-sticky .header {
 	box-shadow: 0 6px 30px rgba(0,0,0,0.05);
 }
@@ -779,7 +770,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 .navbar-custom .navbar-toggle .icon-bar {
 	background: #5b5963;
 }
-
 
 /* ---------------------------------------------- /*
 *  4. Portfolio
@@ -1015,7 +1005,6 @@ figure {
 	border-radius: 3px 0 0 3px;
 }
 
-
 /* ---------------------------------------------- /*
 *  5. Servise
 /* ---------------------------------------------- */
@@ -1046,7 +1035,6 @@ figure {
 	font-size: 30px;
 	box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
 }
-
 
 .iconbox-title {
 	margin: 0 0 15px;
@@ -1104,11 +1092,9 @@ figure {
 	padding: 0;
 }
 
-
 /* ---------------------------------------------- /*
 *  7. Testimonial
 /* ---------------------------------------------- */
-
 
 .testimonials {
 	margin-bottom: 20px;
@@ -1462,7 +1448,6 @@ figure {
 	color: rgba(255, 255, 255, .5);
 }
 
-
 /* ---------------------------------------------- /*
 *  11. Scroll to top
 /* ---------------------------------------------- */
@@ -1492,7 +1477,6 @@ figure {
 	background-color: rgba(235, 235, 235, .8);
 	color: #5b5963;
 }
-
 
 /* ---------------------------------------------- /*
 *  12. Preloader
@@ -1559,7 +1543,6 @@ figure {
 	margin-left: -25px;
 	transform: translateX(-50%);
 }
-
 
 .blobs {
 	filter: url("#goo");
@@ -1636,8 +1619,6 @@ figure {
 	padding: 20px !important;
 }
 
-
-
 /* ---------------------------------------------- /*
 *  14. All Media Queries
 /* ---------------------------------------------- */
@@ -1650,7 +1631,6 @@ figure {
 	}
 
 }
-
 
 @media (max-width: 991px) {
 
