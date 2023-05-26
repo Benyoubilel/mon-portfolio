@@ -493,6 +493,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 /* ---------------------------------------------- */
 
 #home {
+	background: url("../images/home2.jpg");
 	background-color: #5b5963;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
